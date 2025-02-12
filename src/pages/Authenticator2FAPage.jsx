@@ -27,8 +27,8 @@ function Authenticator2FAPage() {
     setIsLoading(true)
     event.preventDefault()
     localStorage.removeItem("login-pin")
-    navigate("/")
     localStorage.setItem("token", true)
+    navigate("/")
     window.location.reload()
   }
 

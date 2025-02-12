@@ -1,5 +1,5 @@
 // techstack =====================================================================
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 import { useRecoilState } from "recoil"
 
@@ -41,6 +41,12 @@ import {
 } from "../DB/HomePage"
 
 function HomePage() {
+  useEffect(() => {
+    if (localStorage.getItem("token") !== "true") {
+      navigate("/login")
+    }
+  }, [])
+
   const [darkMode, setDarkMode] = useRecoilState(getTheme)
 
   const navigate = useNavigate()
@@ -64,7 +70,6 @@ function HomePage() {
   //   RECOIL
   const [unread_notif, setunread_notif] = useState(0)
   const [userProfile, setuserProfile] = useState(dataUserProfile)
-
 
   // function navigate to trade page
   const navigateToTrade = (coin, data) => {
