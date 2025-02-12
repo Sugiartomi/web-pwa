@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.text-roboto {
+  font-family: "Roboto";
+  font-style: normal;
+}
+.text-inter {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.text-grey {
+  color: #a9a9a9;
+}
+
+/* --------------------------- font size --------------------- */
+.font-7 {
+  font-size: 7px;
+}
+.font-8 {
+  font-size: 8px;
+}
+.font-9 {
+  font-size: 9px;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+.font-11 {
+  font-size: 11px;
+}
+.font-12 {
+  font-size: 12px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-17 {
+  font-size: 17px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-19 {
+  font-size: 19px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-23 {
+  font-size: 23px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-26 {
+  font-size: 26px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-32 {
+  font-size: 32px;
+}
+
+.font-40 {
+  font-size: 40px;
+}
+
+/* -------------------------------- font - color ------------------------- */
+.font-primary {
+  color: #1b6aea;
+}
+
+.font-red {
+  color: #f4465e;
+}
+
+.font-dark {
+  color: #4c5058;
+}
+
+.font-green {
+  color: #20cb6f;
+}
+
+.font-yellow {
+  color: #f4b946;
+}
+
+.font-grey-dark {
+  color: #4c5058;
+}
+.font-input-column {
+  color: #c7c8da;
+}
+
+.font-blue-grey {
+  color: #0c6db5;
+}
+
+.font-grey2 {
+  color: #6c7487;
+}
+.font-modal-withdrawal-confirm {
+  color: #6c7487;
+}
+/* ----------------------------------- background-color --------------------- */
+.bg-blue {
+  background-color: #1b6aea;
+}
+
+.bg-warning-custom {
+  background-color: #fffade;
+}
+
+.bg-red-transparant {
+  background-color: #fef1f2;
+}
+
+.bg-blue-transparant {
+  background-color: #ecf9ff;
+}
+
+.bg-green-transparant {
+  background-color: #e8ffe8;
+}
+.bg-yellow-transparant {
+  background-color: #fcf4dd;
+}
+.bg-trade {
+  background-color: #fafafc;
+}
+/* ----------------------------------- background-color improvement--------------------- */
+
+
+.bg-imp-blue {
+  background-color: #266DE0;
+}
+.bg-imp-dark-blue {
+  background-color: #1252B8;
+}
+.bg-imp-muted {
+  background-color: #DBD7D7;
+}
+.bg-imp-green {
+  background-color: #C3FBDD;
+}
+
+
+.bg-dark-mode {
+  background-color: #2F343E !important;
+}
+
+.bg-dark-mode2 {
+  background-color: #282A32 !important;
+}
+
+
+.text-imp-muted {
+  color: #DBD7D7;
+}
+/* -------------------------- style ---------------------------------------- */
+.search-wallet::placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+.fixed-navbar {
+  position: fixed;
+ max-width: 480px;
+  bottom: 0;
+  background-color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px; */
+  z-index: 3;
+  
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: white;
+}
+
+.login-form::placeholder {
+  font-size: 15px;
+  color: #808080;
+}
+
+.badge-sign-up {
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.center-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.center-page-order-history {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.list-table-bg {
+  background-color: #ffeded;
+}
+
+.search-form::placeholder {
+  font-size: 13px;
+  color: black;
+}
+.voucher-form::placeholder {
+  color: #dde4ea;
+  font-size: 12px;
+}
+.profile-circle {
+  height: 70px;
+  width: 70px;
+  background-color: #1b6aea;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.form-change-password::placeholder {
+  color: #dde4ea;
+  font-size: 16px;
+}
+
+.delete-account-textarea::placeholder {
+  font-size: 14px;
+}
+.pin-circle {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.center-page-acttive-pin {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.help-bg {
+  background-image: url(assets/helpBackgroundImage.svg);
+}
+
+.kyc-form::placeholder {
+  color: #c7c8da;
+  font: 14px;
+}
+
+.kyc-select-form {
+  color: #c7c8da;
+  font: 14px;
+}
+
+.kyc-select option:not([value=""]) {
+  color: black;
+}
+
+.center-page-success-kyc {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.vertikal-line {
+  border-left: 1px solid #dee2e6;
+  height: 25px;
+}
+
+.authenticator2FAForm::placeholder {
+  font-size: 12px;
+  color: #c7c8da;
+}
+.PhoneInput {
+  /* background-color: rebeccapurple; */
+  border: none;
+  padding: 0px 5px 0px 5px;
+}
+.PhoneInputInput {
+  height: 38px;
+  border: none;
+}
+
+.phone-input {
+  border: 1px solid #c3c8cc;
+  border-radius: 4px;
+}
+.inputStyle {
+  background: #f3f3f3;
+  border-radius: 8px;
+  width: 45px !important;
+  height: 45px;
+  border: 0px;
+  margin-left: 8px;
+  /* margin-right: 8px; */
+}
+.inputStyle:focus:focus {
+  outline: none;
+}
+
+.outline-confirm-pin {
+  border: 1px solid #f4465e;
+  background: #ffeded;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  width: 0px; /* Firefox */
+}
+
+
+/* SWAL */
+/* .swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #007bff;
+  font-size: 12px;
+  border: 1px solid #007bff;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+} */

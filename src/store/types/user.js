@@ -1,0 +1,11 @@
+export const PHONE_VERIFICATION = "PHONE_VERIFICATION";
+export const PIN_GUARD = "PIN_GUARD";
+export const GOOGLE_2FA = "GOOGLE_2FA";
+export const SECURITY_STATUS = "SECURITY_STATUS";
+export const LOGIN_STATUS = "LOGIN_STATUS";
+export const ADD_BANK_ACCOUNT = "ADD_BANK_ACCOUNT";
+
+// from API
+export const USER_PROFILE = "USER_PROFILE";
+export const TOTAL_WALLET_ASSET = "TOTAL_WALLET_ASSET";
+export const DATA_ALL_TICKER = "DATA_ALL_TICKER";
