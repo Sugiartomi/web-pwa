@@ -41,15 +41,6 @@ import {
 } from "../DB/HomePage"
 
 function HomePage() {
-  const [ready, setReady] = useState(false)
-  useEffect(() => {
-    if (localStorage.getItem("token") == "true") {
-      setReady(true)
-    } else {
-      navigate("/login")
-    }
-  })
-
   const [darkMode, setDarkMode] = useRecoilState(getTheme)
 
   const navigate = useNavigate()
@@ -80,6 +71,18 @@ function HomePage() {
       state: { last_price_percentage_24h: data, allTicker },
     })
   }
+
+  const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    if (localStorage.getItem("token") == "true") {
+      setReady(true)
+    } else if (localStorage.getItem("token") == null) {
+      navigate("/login")
+    } else {
+      navigate("/login")
+    }
+  }, [ready])
 
   console.log(ready)
   console.log(localStorage.getItem("token"))
