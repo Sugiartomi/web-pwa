@@ -43,11 +43,12 @@ import {
 function HomePage() {
   const [ready, setReady] = useState(false)
   useEffect(() => {
-    if (localStorage.getItem("token") !== "true") {
+    if (localStorage.getItem("token") == "true") {
+      setReady(true)
+    } else {
       navigate("/login")
     }
-    setReady(true)
-  }, [])
+  })
 
   const [darkMode, setDarkMode] = useRecoilState(getTheme)
 
@@ -79,6 +80,9 @@ function HomePage() {
       state: { last_price_percentage_24h: data, allTicker },
     })
   }
+
+  console.log(ready)
+  console.log(localStorage.getItem("token"))
 
   return (
     <>
